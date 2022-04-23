@@ -1,1 +1,1 @@
-"# React-Colors-Project"
+# React-Colors-Project
