@@ -2,4 +2,45 @@
   display: inline-block;
   width: 20%;
   height: 25%;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: -0.2rem;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.7rem 1.4rem;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  opacity: 0;
+}
+
+.BoxColor:hover .copy-btn {
+  opacity: 1;
+}
+
+.box-color_text,
+.see-more {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.box-color_text {
+  left: 0;
+}
+
+.see-more {
+  right: 0;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
