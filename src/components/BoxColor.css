@@ -2,9 +2,9 @@
   display: inline-block;
   width: 20%;
   height: 25%;
-  position: relative;
-  cursor: pointer;
   margin-bottom: -0.2rem;
+  cursor: pointer;
+  position: relative;
 }
 
 .copy-btn {
@@ -43,4 +43,49 @@
   right: 0;
   background: rgba(255, 255, 255, 0.3);
   color: #fff;
+}
+
+.copy-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  z-index: 0;
+}
+
+.copy-overlay.show {
+  transform: scale(50);
+  z-index: 10; /* child of .BoxColor */
+}
+
+.copy-text {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  z-index: 0;
+}
+
+.copy-text.show {
+  transform: scale(1);
+  z-index: 20; /* child of .BoxColor */
+}
+
+.copy-text h2 {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 6.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.copy-text p {
+  font-size: 1.6rem;
 }
