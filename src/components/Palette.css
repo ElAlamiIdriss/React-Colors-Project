@@ -4,9 +4,24 @@
 }
 
 .palette-colors {
-  height: 90%;
+  height: 87%;
 }
 
 .snack-bar-message {
   font-size: 1.2rem;
+}
+
+.footer {
+  height: 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-emoji {
+  font-size: 1.6rem;
+  margin: 0 1rem;
 }

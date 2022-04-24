@@ -9,7 +9,7 @@ import NavBar from "./NavBar";
 import BoxColor from "./BoxColor";
 
 class Palette extends Component {
-  state = { level: 500, format: "hex", openSnackbar: true };
+  state = { level: 500, format: "hex", openSnackbar: false };
 
   changeLevel = (level) => {
     this.setState({ level });
@@ -28,7 +28,7 @@ class Palette extends Component {
     const { level, format, openSnackbar } = this.state;
 
     const colorBoxes = palette.colors[level].map((color) => (
-      <BoxColor background={color[format]} name={color.name} />
+      <BoxColor background={color[format]} name={color.name} key={color.id} />
     ));
 
     return (
@@ -40,13 +40,16 @@ class Palette extends Component {
           changeFormat={this.changeFormat}
         />
         <div className="palette-colors">{colorBoxes}</div>
-        <footer>OK</footer>
+        <footer className="footer">
+          {palette.paletteName}{" "}
+          <span className="footer-emoji">{palette.emoji}</span>
+        </footer>
 
         {/* Snack Bar for format*/}
         <Snackbar
           anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
           open={openSnackbar}
-          autoHideDuration={2000}
+          autoHideDuration={1000}
           onClose={this.closeSnackBar}
           message={
             <span id="message-id" className="snack-bar-message">
