@@ -5,8 +5,8 @@ import CloseIcon from "@mui/icons-material/Close";
 
 import "./Palette.css";
 
-import NavBar from "./NavBar";
-import BoxColor from "./BoxColor";
+import NavBar from "../NavBar/NavBar";
+import BoxColor from "../BoxColor/BoxColor";
 
 class Palette extends Component {
   state = { level: 500, format: "hex", openSnackbar: false };
