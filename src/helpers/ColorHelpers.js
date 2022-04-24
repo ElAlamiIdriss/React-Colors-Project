@@ -26,8 +26,8 @@ const generatePalette = function (starterPalette) {
         name: `${color.name} ${levels[i]}`,
         id: color.name.toLowerCase().replaceAll(" ", "-"),
         hex: scale,
-        grb: chroma(scale).css(),
-        grba: chroma(scale).css().replace("rgb", "rgba").replace(")", ",1.0)"),
+        rgb: chroma(scale).css(),
+        rgba: chroma(scale).css().replace("rgb", "rgba").replace(")", ", 1.0)"),
       });
     }
   }
