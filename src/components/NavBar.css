@@ -1,0 +1,50 @@
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7%;
+}
+
+.logo {
+  padding: 1.5rem;
+  background: #f4f4f4;
+  font-size: 1.4rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #444;
+}
+
+.slider-container {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.slider {
+  width: 30rem;
+}
+
+.rc-slider-track {
+  background: transparent;
+}
+
+.rc-slider-rail {
+  height: 0.8rem;
+}
+
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus {
+  background: #118491;
+  width: 1.7rem;
+  height: 1.7rem;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
