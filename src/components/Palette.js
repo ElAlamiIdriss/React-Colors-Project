@@ -8,7 +8,6 @@ class Palette extends Component {
     const colorBoxes = this.props.colors.map((color) => (
       <BoxColor background={color.color} name={color.name} />
     ));
-    console.log(colorBoxes);
 
     return (
       <div className="Palette">
